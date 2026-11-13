@@ -27,7 +27,7 @@ set.seed(2026)
 
 # 1. Read and classify data ---------------------------------------------------
 
-file_path <- "OR值整理应用0409.xlsx"
+file_path <- "file_path"
 
 df_raw <- read_excel(file_path, sheet = 2)
 classify_layer <- function(index, unit) {
