@@ -93,7 +93,7 @@ model {
   // Flu average constraint likelihood
   for (k in 1:K_flu)
      theta_flu_all[k] ~ normal(1/2 * mu_or[flu_A_idx[k]] + 1/2 * mu_or[flu_B_idx[k]], sigma_flu_all[k]);
-   // IBV占比越小，index越小
+   // Sensitivity analysis
     //theta_flu_all[k] ~ normal(2/3 * mu_or[flu_A_idx[k]] + 1/3 * mu_or[flu_B_idx[k]], sigma_flu_all[k]);
 }
 "
